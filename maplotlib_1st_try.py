@@ -7,7 +7,7 @@ if __name__ == "__main__":
 	plt.style.use('seaborn')
 	fig, ax = plt.subplots()
 	# ax.plot(input_values, squares, linewidth = 3)
-	ax.scatter(x_values, y_values, s=1)
+	ax.scatter(x_values, y_values, s=1, c=y_values, cmap=plt.cm.Blues)
 
 	# Set chart title and label axes.
 	ax.set_title("Square Numbers", fontsize=24)
